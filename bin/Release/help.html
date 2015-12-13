@@ -1,0 +1,213 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head></head>
+<body>
+<div style="text-align: center;">
+<table style="width: 50%; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="10" cellspacing="10">
+<caption style="caption-side: bottom;"></caption><tbody align="center">
+<tr>
+<td><img style="width: 400px; height: 312px;" alt="" src="sf.jpg"></td>
+</tr>
+<tr align="left">
+<td>
+<div style="text-align: center;"><br><font size="+2"><span style="font-weight: bold;">
+Università di Cagliari</span></font><br><span style="font-weight: bold;">
+CdL in Informatica</span><br style="font-weight: bold;"><span style="font-weight: bold;">
+PR1<br>Autore: Antonello Meloni (matricola 42062) - A.A 2013/2014<br></span>
+<br>
+Programma per la gestione del menu' e della cassa di un ristorante.<br>
+<br>
+&nbsp;</div>
+<ol style="list-style-type: upper-roman;">
+<li><a href="#I_-_Il_Programma" target="">Descrizione
+del programma</a></li>
+<li><a href="#II_-_Personalizzare_il_programma">Personalizzazione</a></li>
+<li><a href="#III_-_Guida_alluso">Guida
+all'uso</a></li>
+</ol>
+</td>
+</tr>
+<tr>
+<td><br>
+<a style="font-weight: bold;" name="I_-_Il_Programma"></a><span style="font-weight: bold;">I - Il Programma</span><br>
+<br>
+<div style="text-align: justify;">Il programma è
+scritto in C ed utilizza le librerie grafiche GTK+. E' stato compilato
+e testato su un Pc con sistema operativo Windows 7 e su una macchina
+virtuale Oracle Virtual Box con s.o. Linux L-Ubuntu versione 12.04. In
+entrambi i casi&nbsp; sono state installate&nbsp;le GTK+
+versione 2.24.<br>
+<br>
+I sorgenti del programma sono divisi in più file:<br>
+n. 2 file header (core.h e gui.h)<br>
+n. 3 file codice (main.c, core.c e gui.c)<br>
+<br>
+Il programma è strutturato in tre schermate principali, una
+schermata informativa ed una di scelta, modificate a seconda del punto
+chiamante, in modo da adattarle ai contenuti da visualizzare in ogni
+procedura.<br>
+<br>
+La finestra principale mostra un menu, contenente le
+voci "File", "Gestione menu'" e "Cassa", otto pulsanti ed il logo del ristorante. I pulsanti sono divisi
+equamente alla sinistra ed alla destra dell'immagine.<br>
+<br>
+La
+schermata di ricerca contiene al suo interno gli elementi atti alla
+immisione dei criteri di ricerca,&nbsp; la lista dei piatti che
+corrispondono a tali criteri ed i pulsanti, che consentono di avviare le diverse
+procedure.<br>
+<br>
+La schermata di gestione della cassa visualizza la
+lista dei tavoli, con i relativi ordini associati ed i pulsanti per la
+selezione del tavolo e la stampa dello scontrino.<br>
+<br>
+La finestra informativa di
+dialogo&nbsp;viene richiamata ogni volta, che si ravvisa la
+necessità di comunicare qualcosa all'utilizzatore del programma. Il
+messaggio viene passato, come parametro, dalla procedura che attiva tale
+finestra.<br>
+<br>
+La finestra di scelta, richiamata da più
+punti del programma, permette di far esprimere una scelta all'utente
+quando è necessaria una conferma sulle operazioni da eseguire.<br>
+Alla procedura vengono passati, come parametri, il titolo della
+finestra ed il messaggio da visualizzare.<br>
+<br>
+Per aumentare l'affidabilità del programma, si è preferito aggiornare
+immediatamente gli archivi nei casi di aggiunta, modifica o
+eliminazione di un piatto, nonostante in tutte le procedure si lavori
+con il vettore di strutture in memoria, in modo che, in caso di interruzione
+improvvisa, venga persa solo l'ultima operazione.<br>
+<br>
+Nella gestione cassa, poichè richiesto esplicitamente nelle specifiche,
+per gli ordini si è utilizzato esclusivamente il vettore di strutture,
+dichiarato dinamicamente e contenente al suo interno un puntatore a
+struttura, di tipo ordine, per ogni tavolo/scontrino. Anche lo spazio in memoria,
+necessario per gli ordini, viene gestito dinamicamente con una prima
+allocazione di memoria prefissata #MEM, poi riallocata in caso di
+superamento del numero di ordini possibili con tale allocazione.<br>
+<br>
+Tutte le aperture di file e le allocazioni e riallocazioni di memoria
+sono sottoposte a controllo e restituiscono un errore in caso di
+problemi. Se gli errori avvengono in fase di scrittura degli archivi,
+normalmente si esce dal programma. Se invece accade qualcosa di
+imprevisto che&nbsp;non pregiudica l'integrità dei file di archivio, se
+ne da notizia all'utilizzatore e la sola procedura, in esecuzione in
+quel momento, viene fermata, restituendo il controllo al ciclo principale.<br>
+&nbsp;<br>
+L'uscita dalle finestre non è consentita mediante il pulsante [X] di
+chiusura finestra. Per uscire dal programma è necessario usare il
+pulsante di uscita, che attiva la procedura di chiusura sicura del
+programma. Tale procedura, tra l'altro, verifica che non ci siano
+scontrini da stampare ed invita l'utente a farlo prima della chiusura.<br>
+<br>
+</div>
+</td>
+</tr>
+<tr>
+<td><br>
+<a style="font-weight: bold;" name="II_-_Personalizzare_il_programma"></a><span style="font-weight: bold;">II
+- Personalizzare il programma</span><br>
+<div style="text-align: justify;">
+<p>Per la personalizzazione del programma, evitando al
+contempo la possibilità di modifiche indesiderate post messa in
+esercizio, si è preferito ricorrere alla modifica di
+alcuni punti chiave del sorgente.<br>
+Per la variazione del numero di tavoli è possibile modificare il valore
+della #define TAVOLI in cui si è memorizzato 15, come richiesto dalle
+specifiche del progetto finale.&nbsp;<br>
+Per quanto riguarda il nome del ristorante, nel main è presente una
+linea che consente di personalizzarlo. Tutti i titoli delle finestre
+prenderanno il valore dalla stringa impostata in tal modo. Lo stesso
+avverrà per la stampa dello scontrino e dei vari file.<br>
+Per adattare le stampe delle intestazioni nei file menu, ricerca e
+stampa e scontrino si è implementato un algoritmo per il calcolo degli
+spazi da aggiungere a sinistra e a destra del nome del ristorante, affinche' 
+quest'ultimo sia stampato centralmente.<br>
+Per variare il logo del ristorante, nella schermata di avvio, è sufficiente
+sostituire il file "sf.jpg", contenuto nella cartella del programma.</p>
+</div>
+</td>
+</tr>
+<tr>
+<td><br>
+<a style="font-weight: bold;" name="III_-_Guida_alluso"></a><span style="font-weight: bold;">III - Guida
+all'uso</span><br>
+<br>
+<div style="text-align: justify;"><br>
+Alla
+voce [File] del menu possiamo trovare le funzioni per la
+reinizializzazione degli archivi. La reinizializzazione dell'archivio
+dei piatti comporta la cancellazione dell'archivio e la creazione di un
+file vuoto. La reinizializzazione&nbsp; dell'archivio ingredienti
+comporta
+la sua cancellazione ed il suo ripristino, a partire dagli ingredienti
+contenuti in quel momento nell'archivio piatti.<br>
+<br>
+Alla voce
+[Gestione menu'] possiamo trovare le funzioni di aggiunta, modifica ed
+elimina piatto, seguite da stampa menu e da ricerca e stampa.<br>
+<br>
+Alla
+voce [Cassa] troviamo [Gestione cassa] e le due voci per la
+visualizzazione dei file degli utilizzi degli ingredienti e del totale
+degli scontrini emessi.<br>
+<br>
+Con i grandi pulsanti della pagina
+principale, di dimensioni generose, per facilitare l'utilizzo con
+schermi dotati di funzione touch, si possono attivare le procedure di
+aggiunta, modifica ed eliminazione piatto, la stampa del menu', la
+ricerca e stampa dei piatti, la gestione della cassa, la
+visualizzazione di questa pagina e l'uscita dal programma.<br>
+<br>
+La funzione di ricerca è il cuore del programma. Permette di scegliere
+un piatto per la modifica, per l'eliminazione e per l'aggiunta a un
+ordine. Per facilitare la scelta del piatto è possibile selezionare il
+tipo desiderato dalla combobox, oppure inserire la parte iniziale
+dell'id, del nome o di un igrediente, oppure tutte le cose
+contemporaneamente. Premento il pulsante [Avvia ricerca] sono
+visualizzati solo i piatti che rispettano tutti i criteri impostati.
+Premendo il pulsante [Pulisci finestra] vengono azzerati tutti i
+criteri impostati e vengono nuovamente visualizzati tutti i piatti.<br>
+<br>
+La selezione del piatto può essere fatta con un click del tasto
+sinistro del mouse, sulla riga scelta o anche inserendo direttamente il
+numero id del piatto, nella casella in basso a destra. Premendo il
+tasto seleziona, si chiude la finestra di ricerca ed il piatto selezionato sarà l'oggetto della procedura seguente. <br>
+<br>
+Quando la selezione del piatto avviene per l'aggiunta ad un ordine,
+occorre prestare attenzione alla casella contenente la quantità di
+porzioni, da aggiungere allo stesso. Tale valore può essere inserito
+manualmente, oppure premendo il corretto numero di volte i tasti [aumenta]
+e [diminuisci] quantità.<br>
+<br>
+La finestra della gestione della cassa presenta l'elenco dei tavoli,
+per ognuno dei quali è visualizzato il numero di id ed il numero di
+ordini, associati a quel tavolo, attivi in quel momento.<br>
+<br>
+Premendo sull'indicatore a forma di freccia o di + (è possibile che la
+forma cambi a seconda delle librerie installate), che compare alla sinistra del
+numero id del tavolo, si visualizzano gli ordini associati allo stesso.
+Se non c'è nessun ordine associato al tavolo, l'indicatore che consente
+l'espansione del ramo non è presente.<br><br>Per
+aggiungere un ordine è necessario selezionare un tavolo con un click
+del tasto sinistro del mouse, oppure inserire manualmente il numero id
+dello stesso nella casella in basso a sinistra e premere il pulsante
+[Crea scontrino Aggiungi ordine].<br>Immediatamente si aprirà la finestra di selezione piatto, descritta in precedenza.<br><br>Quando
+si vuole stampare uno scontrino occorre nuovamente selezionare il
+tavolo e premere il tasto [Stampa scontrino]. Il programma visualizzerà
+&nbsp;il file di testo generato e, una volta chiuso il programma di
+visualizzazione, chiederà conferma della corretta emissione dello
+scontrino. Se la risposta sarà affermativa tutti gli ordini relativi al
+tavolo saranno cancellati e lo stesso potrà essere usato per la
+creazione di un nuovo scontrino. In caso di risposta negativa tutto
+rimane invariato, compresa la possibilità di aggiungere altre
+ordinazioni.<br>Al momento della conferma dell'avvenuta emissione dello
+scontrino, il programma aggiorna i totali degli ingredienti usati,
+visualizzabili con l'apposita funzione del menu Cassa. <br><br>Buon Lavoro.<br>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</body></html>

@@ -1,0 +1,28 @@
+ ________________________________________________________________________________________________________________________________
+|                                                                                                                                |
+|                                                  Ristorante Tutti al fresco...                                                 |
+|                                                        Stampa del Menu'                                                        |
+|________________________________________________________________________________________________________________________________|
+|ID   | NOME                    | TIPO       | INGREDIENTI                                                               PREZZO  |
+|   4 |Insalata di mare         |Antipasto   |Polpo                   |Gamberetti              |Cozze                   |    6,50|
+|  12 |Insalata di polpo        |Antipasto   |Polpo                   |Olio                    |Prezzemolo              |    4,00|
+|  14 |Zuppa di cozze e arselle |Antipasto   |Cozze                   |Arselle                 |Sugo                    |    4,50|
+|   0 |Tagliatelle all'uovo     |Primo       |Tagliatelle all'uovo    |Sugo                    |Formaggio               |    3,50|
+|  15 |Malloreddus campidanese  |Primo       |Malloreddus             |Salsiccia sarda         |Sugo                    |    3,50|
+|  18 |Pennette all'arrabbiata  |Primo       |Pennette                |Sugo                    |Peperoncino             |    4,00|
+|  19 |Spaghetti alle vongole   |Primo       |Spaghetti               |Vongole                 |Bottarga                |    5,50|
+|   5 |Bistecca di cavallo      |Secondo     |Bistecca di cavallo     |Aglio                   |Prezzemolo              |    7,00|
+|   6 |Fettine alla pizzaiola   |Secondo     |Fettine vitello         |Sugo                    |Mozzarella              |    4,50|
+|  11 |Porchetto arrosto        |Secondo     |Porchetto               |Sale                    |Olio d'oliva            |    7,50|
+|  13 |Fritto misto             |Secondo     |Gamberi                 |Anelli di totano        |Seppiette               |    6,50|
+|  20 |Arrosto di vitello       |Secondo     |Vitello per arrosto     |Sale                    |Olio                    |    6,20|
+|   2 |Patatine fritte          |Contorno    |Patate                  |Olio                    |Sale                    |    2,50|
+|   3 |Tris di formaggi         |Contorno    |Formaggio pecorino      |Formaggio caprino       |Grana padano            |    3,50|
+|   1 |Torta margherita         |Dessert     |Preparato per torte     |Uova                    |Zucchero a velo         |    1,50|
+|   7 |Frutta                   |Dessert     |Mele                    |Pere                    |Banane                  |    3,00|
+|   8 |Macedonia                |Dessert     |Frutta                  |Zucchero                |Rhum                    |    3,00|
+|   9 |Gelato alla frutta       |Dessert     |Latte                   |Frutta                  |Zucchero                |    1,50|
+|  10 |Sorbetto al limone       |Dessert     |Latte                   |Limone                  |Zucchero                |    3,00|
+|  16 |Tiramisu'                |Dessert     |Zabaione                |Savoiardi               |Caffe'                  |    3,50|
+|  17 |Seadas                   |Dessert     |Formaggio               |Miele                   |Pasta sfoglia           |    2,50|
+|________________________________________________________________________________________________________________________________|

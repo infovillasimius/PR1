@@ -1,0 +1,28 @@
+ _____________________________________________
+|                                             |
+|        Ristorante Tutti al fresco...        |
+|                 Tavolo   5                  |
+|_____________________________________________|
+|                                             |
+| Primi                                       |
+|                                             |
+|-  4 x Tagliatelle all'uovo           14,00 €|
+|                                             |
+| Secondi                                     |
+|                                             |
+|-  4 x Porchetto arrosto              30,00 €|
+|                                             |
+| Dessert                                     |
+|                                             |
+|-  4 x Macedonia                      12,00 €|
+|                                             |
+|_____________________________________________|
+|                                             |
+| Importo parziale                     56,00 €|
+|                                             |
+| Sconto (10%)                          5,60 €|
+|                                             |
+| Importo totale                       50,40 €|
+|_____________________________________________|
+
+                          Grazie e Arrivederci.

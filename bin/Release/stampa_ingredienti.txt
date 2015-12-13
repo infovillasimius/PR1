@@ -1,0 +1,55 @@
+ ______________________________________________ 
+|                                              |
+|         Ristorante Tutti al fresco...        |
+|                                              |
+|      -> Stampa  utilizzo ingredienti <-      |
+|______________________________________________|
+|  ID | NOME                      | N.UTILIZZI |
+|   0 | Tagliatelle all'uovo      |          8 |
+|   1 | Sugo                      |         17 |
+|   2 | Formaggio                 |         15 |
+|   3 | Preparato per torte       |          0 |
+|   4 | Uova                      |          0 |
+|   5 | Zucchero a velo           |          0 |
+|   6 | Patate                    |          3 |
+|   7 | Olio                      |         13 |
+|   8 | Sale                      |         13 |
+|   9 | Formaggio pecorino        |          5 |
+|  10 | Formaggio caprino         |          5 |
+|  11 | Grana padano              |          5 |
+|  12 | Polpo                     |         18 |
+|  13 | Gamberetti                |          8 |
+|  14 | Cozze                     |          8 |
+|  15 | Bistecca di cavallo       |          6 |
+|  16 | Aglio                     |          6 |
+|  17 | Prezzemolo                |         16 |
+|  18 | Fettine vitello           |          5 |
+|  19 | Mozzarella                |          5 |
+|  20 | Mele                      |          4 |
+|  21 | Pere                      |          4 |
+|  22 | Banane                    |          4 |
+|  23 | Frutta                    |         12 |
+|  24 | Zucchero                  |         22 |
+|  25 | Rhum                      |          9 |
+|  26 | Latte                     |         13 |
+|  27 | Limone                    |         10 |
+|  28 | Porchetto                 |         10 |
+|  29 | Olio d'oliva              |         10 |
+|  30 | Gamberi                   |          4 |
+|  31 | Anelli di totano          |          4 |
+|  32 | Seppiette                 |          4 |
+|  33 | Arselle                   |          0 |
+|  34 | Malloreddus               |          4 |
+|  35 | Salsiccia sarda           |          4 |
+|  36 | Zabaione                  |          0 |
+|  37 | Savoiardi                 |          0 |
+|  38 | Caffe'                    |          0 |
+|  39 | Miele                     |          7 |
+|  40 | Pasta sfoglia             |          7 |
+|  41 | Pennette                  |          0 |
+|  42 | Peperoncino               |          0 |
+|  43 | Spaghetti                 |          2 |
+|  44 | Vongole                   |          2 |
+|  45 | Bottarga                  |          2 |
+|  46 | Vitello per arrosto       |          0 |
+|______________________________________________|
